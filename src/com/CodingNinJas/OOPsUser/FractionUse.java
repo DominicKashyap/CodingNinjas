@@ -3,11 +3,12 @@ package com.CodingNinJas.OOPsUser;
 import com.CodingNinJas.OOPs.Fraction;
 
 public class FractionUse {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Fraction obj1 = new Fraction(10,30);
         obj1.print();
 
         Fraction f2 = new Fraction(3,4);
+        obj1.setDenominator(0);
         obj1.add(f2);
         obj1.print();
         f2.print();

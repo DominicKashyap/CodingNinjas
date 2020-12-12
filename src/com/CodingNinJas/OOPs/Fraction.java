@@ -67,7 +67,11 @@ public class Fraction {
         return this.numerator;
     }
 
-    public void setDenominator(int denominator){
+    public void setDenominator(int denominator)throws ZeroDenimonatorException{
+        if(denominator==0){
+            ZeroDenimonatorException e = new ZeroDenimonatorException();
+            throw e;
+        }
         this.denominator = denominator;
     }
 
