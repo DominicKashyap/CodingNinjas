@@ -1,5 +1,6 @@
 package com.CodingNinJas.OOPs;
 
+//Nice one
 public class DynamicArray {
     int data[];
     int nextInt;
